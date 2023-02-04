@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_controller.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Carousel extends StatefulWidget {
   const Carousel({Key? key}) : super(key: key);
@@ -48,9 +49,25 @@ class _MoviesPageState extends State<Carousel> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      /*appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0.0,
+        leading: InkWell(
+          onTap: () {
+            Navigator.of(context).pop();
+          },
+          child: Icon(
+            Icons.west,
+            color: Colors.black,
+            size: 25.sp,
+          ),
+        ),
+      ),*/
       // backgroundColor: Colors.red,
       body: Stack(
         children: [
+
+
           Container(
               width: MediaQuery.of(context).size.width,
               height: MediaQuery.of(context).size.height,
@@ -112,7 +129,14 @@ class _MoviesPageState extends State<Carousel> {
                 );
               }).toList(),
             ),
-          )
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 10.0,top: 45.0),
+            child: Align(
+              alignment: Alignment.topLeft,
+              child: IconButton(icon: Icon(Icons.keyboard_backspace,color: Colors.white,size: 30.0), onPressed: () {  Navigator.of(context).pop(); },),
+            ),
+          ),
         ],
       ),
     );
