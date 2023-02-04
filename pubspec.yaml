@@ -48,9 +48,10 @@ dependencies:
 #   ===============   video_player ====
   video_player: ^2.4.10
   audio_wave: ^0.1.4
-#
-#  flutter_audio_waveforms: ^1.2.1+7
-#  assets_audio_player: ^3.0.3+9
+
+#=========== lens_spinner:
+  bubble_lens: ^2.0.0
+
 
 
 
