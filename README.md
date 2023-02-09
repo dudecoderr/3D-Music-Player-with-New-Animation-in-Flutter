@@ -12,7 +12,7 @@ Note: _**last updated january 2023 configured project to latest flutter version 
 
 
 <p align="center">
-<img src="assets/Readme (2).jpg" width="200%">
+<img src="https://raw.githubusercontent.com/dudecoderr/3D-Music-Player-with-New-Animation-in-Flutter/master/assets/Readme%20(2).jpg" width="200%">
 </p>
 
 **Packages used:**
